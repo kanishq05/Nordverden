@@ -1,0 +1,68 @@
+Project: Nekomura Slums / Nordverden:SoN
+CS2011 Final Concept
+
+"I flew to close ig" - Rigo (Main Dev)
+
+Update 1 --- Oct. 31st, 2024: 
+* Started from scratch rather than trying to break Nordverden
+* Project Name: Nekomura Slums (takes place the remote island from the main game)
+* Character creator was written again and simplified
+   * Name is still customizable (pronouns removed)
+   * Skill distrubution simplified (can only add 10 pts)
+   * Damage resistance simplified (can only add 0.5)
+   * Everything else was scrapped for simplicity
+* {Unfinished in v0.001} Occupations
+   * Backgrounds changed to former occupation and will have more of an impact
+   * Occupations should also detemine the starting equipment
+* Bug testing area currently only displays the user's stats
+
+Update 2 --- Nov. 2nd, 2024:
+* Finished Character Creator and made it work without global variables
+  * Player can set their character's name
+  * set their character's skills
+  * can set damage resistances
+  * can choose background which sets starting equipment and bonus skills
+  * added custom character for debugging
+* Added a new turn based combat system (had to do a lot of troubleshooting to make it work well)
+  * can only fight one enemy at a time
+  * player only has 9 lives, if they lose them all the game ends
+* Added basic leveling system
+  * Level increases one skill by +5
+  * increases damage one damage resistance by +0.25
+  * manually increase health
+* Added basic trading system
+  * Merchant holds 5 items and their prices
+  * Character can barter if their speech is high
+  * Merchant "takes" money and "gives" item
+* Debug area
+  * displays character's stats
+  * combat test with one enemy
+  * shop test with barter
+  * combat test with two enemies
+* More info on comments (too tired to type everything out here. its 5:42am...)
+
+Update 3 --- Nov. 3rd, 2024:
+* (Small update) Added basic reputation system
+* Three factions in the game rn, Government and two gangs
+* Need to manually edit reputation
+* Added example of how reputation could work in debug area
+  * Can join a gang to help out with an attack later
+  * If player tries to ask government both gangs will attack
+  * If player joins the rival gang the fight will be easier
+  * If player chooses not to join a gang character loses health but is not attacked
+* Mostly just if-else statements and more combat examples
+
+Update 4 --- Nov. 6th, 2024:
+* Small update
+* Removed methods in character creator for name and old job and set them inside main class
+* Added color to certain text (might need to change if Prof. W. shows us a diff way)
+* Fixed Unemployed bug removing weapon
+* Added +10 to skill points for better balancing
+
+Update 5 --- Nov. 15th, 2024:
+* Moved function junction to the bottom
+* Added a different colouring method using a method instead of individual variables
+* Added a proper start to 1/6 of the backgrounds
+* Added a function for slowing text (based on Lab 11.13)
+* Added a pause function for slowing things down
+* Removed redundant methods in the character creator
